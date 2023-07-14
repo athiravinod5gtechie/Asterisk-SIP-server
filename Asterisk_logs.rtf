@@ -1,0 +1,485 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red148\green146\blue12;\red136\green136\blue136;\red170\green85\blue85;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\f0\fs20 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 80169)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf3 NOTICE\cf0 [80452]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf5 ERROR\cf0 [80452]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf3 NOTICE\cf0 [80452]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf3 NOTICE\cf0 [80452]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf3 NOTICE\cf0 [80453]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf5 WARNING\cf0 [80452]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf3 NOTICE\cf0 [80239]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf5 ERROR\cf0 [80452]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf3 NOTICE\cf0 [80452]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:06:35] \cf3 NOTICE\cf0 [80452]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7003                      (Unspecified)                            D  Auto (No)  No             0        UNKNOWN                         \cf1\highlight2\par
+\cf0\highlight0 1 sip peers [Monitored: 0 online, 1 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show logs\cf1\highlight2\par
+\cf0\highlight0 No such command 'sip show logs' (type 'core show help sip show logs' for other possible commands)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show\cf1\highlight2\par
+\cf0\highlight0 channel        channels       channelstats   domains        history        inuse          mwi            objects        peer\cf1\highlight2\par
+\cf0\highlight0 peers          registry       sched          settings       subscriptions  tcp            user           users\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show history\cf1\highlight2\par
+\cf0\highlight0 Usage: sip show history <call-id>\cf1\highlight2\par
+\cf0\highlight0        Provides detailed dialog history on a given SIP call (specified by call-id).\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:21:20] \cf3 NOTICE\cf0 [80238]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Reachable. (87ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (Yes) No             59446    OK (87 ms)                      \cf1\highlight2\par
+\cf0\highlight0 1 sip peers [Monitored: 1 online, 0 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:22:20] \cf3 NOTICE\cf0 [80238]: \cf4 chan_sip.c\cf0 :\cf4 30421\cf0  \cf4 sip_poke_noanswer\cf0 : Peer '7003' is now UNREACHABLE!  Last qualify: 87\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 Disconnected from Asterisk server\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 81246)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    OK (2 ms)                       \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             59446    UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 2 sip peers [Monitored: 1 online, 1 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:22] \cf3 NOTICE\cf0 [81325]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Reachable. (78ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf3 NOTICE\cf0 [81347]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf5 ERROR\cf0 [81347]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf3 NOTICE\cf0 [81347]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf3 NOTICE\cf0 [81347]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf3 NOTICE\cf0 [81297]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf5 WARNING\cf0 [81347]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf5 ERROR\cf0 [81347]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf3 NOTICE\cf0 [81326]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf3 NOTICE\cf0 [81347]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:29] \cf3 NOTICE\cf0 [81347]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    OK (3 ms)                       \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (Yes) No             1024     OK (146 ms)                     \cf1\highlight2\par
+\cf0\highlight0 2 sip peers [Monitored: 2 online, 0 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:46] \cf5 WARNING\cf0 [81353][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 274\cf0  \cf4 _macro_exec\cf0 : Macro() is deprecated and will be removed from a future version of Asterisk.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:23:46] \cf5 WARNING\cf0 [81353][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 275\cf0  \cf4 _macro_exec\cf0 : Dialplan should be updated to use Gosub instead.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:24:30] \cf3 NOTICE\cf0 [81325]: \cf4 chan_sip.c\cf0 :\cf4 30421\cf0  \cf4 sip_poke_noanswer\cf0 : Peer '7003' is now UNREACHABLE!  Last qualify: 146\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:24:41] \cf3 NOTICE\cf0 [81325]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Reachable. (118ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:25:41] \cf3 NOTICE\cf0 [81325]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Lagged. (239ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:26:02] \cf3 NOTICE\cf0 [81325]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Reachable. (124ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:02] \cf3 NOTICE\cf0 [81325]: \cf4 chan_sip.c\cf0 :\cf4 30421\cf0  \cf4 sip_poke_noanswer\cf0 : Peer '7003' is now UNREACHABLE!  Last qualify: 194\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 Disconnected from Asterisk server\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 81374)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf3 NOTICE\cf0 [81477]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf5 ERROR\cf0 [81477]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf3 NOTICE\cf0 [81477]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf3 NOTICE\cf0 [81477]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf3 NOTICE\cf0 [81427]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf5 WARNING\cf0 [81477]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf5 ERROR\cf0 [81477]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf3 NOTICE\cf0 [81457]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf3 NOTICE\cf0 [81477]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:28:48] \cf3 NOTICE\cf0 [81477]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    OK (3 ms)                       \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (Yes) No             5060     OK (39 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 2 online, 1 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:29:11] \cf5 WARNING\cf0 [81483][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 274\cf0  \cf4 _macro_exec\cf0 : Macro() is deprecated and will be removed from a future version of Asterisk.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:29:11] \cf5 WARNING\cf0 [81483][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 275\cf0  \cf4 _macro_exec\cf0 : Dialplan should be updated to use Gosub instead.\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 Disconnected from Asterisk server\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 81492)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf3 NOTICE\cf0 [81587]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf5 ERROR\cf0 [81587]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf3 NOTICE\cf0 [81587]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf3 NOTICE\cf0 [81587]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf3 NOTICE\cf0 [81540]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf5 WARNING\cf0 [81587]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf5 ERROR\cf0 [81587]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf3 NOTICE\cf0 [81587]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf3 NOTICE\cf0 [81569]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:40] \cf3 NOTICE\cf0 [81587]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf3 NOTICE\cf0 [81587]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf5 ERROR\cf0 [81587]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf3 NOTICE\cf0 [81587]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf3 NOTICE\cf0 [81587]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf3 NOTICE\cf0 [81540]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf5 WARNING\cf0 [81587]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf5 ERROR\cf0 [81587]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf3 NOTICE\cf0 [81587]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf3 NOTICE\cf0 [81569]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:41] \cf3 NOTICE\cf0 [81587]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    OK (4 ms)                       \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (39 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 2 online, 1 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    OK (4 ms)                       \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (39 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 2 online, 1 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:57] \cf5 WARNING\cf0 [81593][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 274\cf0  \cf4 _macro_exec\cf0 : Macro() is deprecated and will be removed from a future version of Asterisk.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:30:57] \cf5 WARNING\cf0 [81593][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 275\cf0  \cf4 _macro_exec\cf0 : Dialplan should be updated to use Gosub instead.\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 Disconnected from Asterisk server\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 81626)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf5 ERROR\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf3 NOTICE\cf0 [81728]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf3 NOTICE\cf0 [81676]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf5 WARNING\cf0 [81728]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf5 ERROR\cf0 [81728]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf3 NOTICE\cf0 [81710]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf3 NOTICE\cf0 [81728]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:30] \cf3 NOTICE\cf0 [81728]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    OK (4 ms)                       \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (40 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 2 online, 1 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:44] \cf5 WARNING\cf0 [81731][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 274\cf0  \cf4 _macro_exec\cf0 : Macro() is deprecated and will be removed from a future version of Asterisk.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:33:44] \cf5 WARNING\cf0 [81731][C-00000001]: \cf4 app_macro.c\cf0 :\cf4 275\cf0  \cf4 _macro_exec\cf0 : Dialplan should be updated to use Gosub instead.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf5 ERROR\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf3 NOTICE\cf0 [81728]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf3 NOTICE\cf0 [81676]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf5 WARNING\cf0 [81728]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf3 NOTICE\cf0 [81710]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf5 ERROR\cf0 [81728]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf3 NOTICE\cf0 [81728]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:14] \cf3 NOTICE\cf0 [81728]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf5 ERROR\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf3 NOTICE\cf0 [81728]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf3 NOTICE\cf0 [81676]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf5 WARNING\cf0 [81728]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf5 ERROR\cf0 [81728]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf3 NOTICE\cf0 [81728]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf3 NOTICE\cf0 [81710]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:16] \cf3 NOTICE\cf0 [81728]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf5 ERROR\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf3 NOTICE\cf0 [81728]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf3 NOTICE\cf0 [81728]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf3 NOTICE\cf0 [81676]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf5 WARNING\cf0 [81728]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf5 ERROR\cf0 [81728]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf3 NOTICE\cf0 [81728]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf3 NOTICE\cf0 [81710]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:34:17] \cf3 NOTICE\cf0 [81728]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    OK (4 ms)                       \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (25 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 2 online, 1 offline Unmonitored: 0 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 Disconnected from Asterisk server\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 81870)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf5 ERROR\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf3 NOTICE\cf0 [81968]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf3 NOTICE\cf0 [81920]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf5 WARNING\cf0 [81968]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf5 ERROR\cf0 [81968]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf3 NOTICE\cf0 [81950]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf3 NOTICE\cf0 [81968]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:25] \cf3 NOTICE\cf0 [81968]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (32 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (32 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (32 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (32 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (32 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (32 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (32 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf5 ERROR\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf3 NOTICE\cf0 [81968]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf3 NOTICE\cf0 [81920]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf5 WARNING\cf0 [81968]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf5 ERROR\cf0 [81968]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf3 NOTICE\cf0 [81968]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf3 NOTICE\cf0 [81950]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:41] \cf3 NOTICE\cf0 [81968]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf5 ERROR\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf3 NOTICE\cf0 [81968]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf3 NOTICE\cf0 [81920]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf5 WARNING\cf0 [81968]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf5 ERROR\cf0 [81968]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf3 NOTICE\cf0 [81950]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf3 NOTICE\cf0 [81968]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:42] \cf3 NOTICE\cf0 [81968]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf5 ERROR\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf3 NOTICE\cf0 [81968]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf3 NOTICE\cf0 [81968]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf3 NOTICE\cf0 [81920]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf5 WARNING\cf0 [81968]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf5 ERROR\cf0 [81968]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf3 NOTICE\cf0 [81968]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf3 NOTICE\cf0 [81950]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:41:44] \cf3 NOTICE\cf0 [81968]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     OK (20 ms)                      \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 1 offline Unmonitored: 1 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 Disconnected from Asterisk server\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 81981)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf3 NOTICE\cf0 [82080]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf5 ERROR\cf0 [82080]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf3 NOTICE\cf0 [82080]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf3 NOTICE\cf0 [82080]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf3 NOTICE\cf0 [82033]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf5 WARNING\cf0 [82080]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf5 ERROR\cf0 [82080]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf3 NOTICE\cf0 [82080]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf3 NOTICE\cf0 [82062]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:43:18] \cf3 NOTICE\cf0 [82080]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 0 online, 1 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 Disconnected from Asterisk server\cf1\highlight2\par
+\cf0\highlight0 Asterisk cleanly ending (0).\cf1\highlight2\par
+\cf0\highlight0 Executing last minute cleanups\cf1\highlight2\par
+\cf0\highlight0 ubuntu@athira-agw:~/asterisk$ sudo asterisk -r\cf1\highlight2\par
+\cf0\highlight0 Asterisk 16.2.1~dfsg-2ubuntu1, Copyright (C) 1999 - 2018, Digium, Inc. and others.\cf1\highlight2\par
+\cf0\highlight0 Created by Mark Spencer <markster@digium.com>\cf1\highlight2\par
+\cf0\highlight0 Asterisk comes with ABSOLUTELY NO WARRANTY; type 'core show warranty' for details.\cf1\highlight2\par
+\cf0\highlight0 This is free software, with components licensed under the GNU General Public\cf1\highlight2\par
+\cf0\highlight0 License version 2 and other licenses; you are welcome to redistribute it under\cf1\highlight2\par
+\cf0\highlight0 certain conditions. Type 'core show license' for details.\cf1\highlight2\par
+\cf0\highlight0 =========================================================================\cf1\highlight2\par
+\cf0\highlight0 Connected to Asterisk 16.2.1~dfsg-2ubuntu1 currently running on athira-agw (pid = 82096)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> reload\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf3 NOTICE\cf0 [82187]: \cf4 res_config_ldap.c\cf0 :\cf4 1830\cf0  \cf4 parse_config\cf0 : No directory user found, anonymous binding as default.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf5 ERROR\cf0 [82187]: \cf4 res_config_ldap.c\cf0 :\cf4 1856\cf0  \cf4 parse_config\cf0 : No directory URL or host found.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf3 NOTICE\cf0 [82187]: \cf4 res_config_ldap.c\cf0 :\cf4 1774\cf0  \cf4 reload\cf0 : Cannot reload LDAP RealTime driver.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf3 NOTICE\cf0 [82187]: \cf4 cdr.c\cf0 :\cf4 4485\cf0  \cf4 cdr_toggle_runtime_options\cf0 : CDR simple logging enabled.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf3 NOTICE\cf0 [82140]: \cf4 sorcery.c\cf0 :\cf4 1266\cf0  \cf4 sorcery_object_load\cf0 : Type 'system' is not reloadable, maintaining previous values\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf5 WARNING\cf0 [82187]: \cf4 res_phoneprov.c\cf0 :\cf4 1230\cf0  \cf4 get_defaults\cf0 : Unable to find a valid server address or name.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf5 ERROR\cf0 [82187]: \cf4 ari/config.c\cf0 :\cf4 312\cf0  \cf4 process_config\cf0 : No configured users for ARI\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf3 NOTICE\cf0 [82187]: \cf4 cel_custom.c\cf0 :\cf4 95\cf0  \cf4 load_config\cf0 : No mappings found in cel_custom.conf. Not logging CEL to custom CSVs.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf3 NOTICE\cf0 [82169]: \cf4 chan_mgcp.c\cf0 :\cf4 4707\cf0  \cf4 reload_config\cf0 : Unable to load config mgcp.conf, MGCP disabled\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:44:37] \cf3 NOTICE\cf0 [82187]: \cf4 app_queue.c\cf0 :\cf4 9096\cf0  \cf4 reload_queue_rules\cf0 : queuerules.conf has not changed since it was last loaded. Not taking any action.\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (No)  No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 0 online, 1 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 0 online, 1 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 0 online, 1 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             1024     UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 0 online, 1 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:45:39] \cf5 WARNING\cf0 [82199][C-00000002]: \cf4 app_macro.c\cf0 :\cf4 274\cf0  \cf4 _macro_exec\cf0 : Macro() is deprecated and will be removed from a future version of Asterisk.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:45:39] \cf5 WARNING\cf0 [82199][C-00000002]: \cf4 app_macro.c\cf0 :\cf4 275\cf0  \cf4 _macro_exec\cf0 : Dialplan should be updated to use Gosub instead.\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:45:39] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Reachable. (80ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (No)  No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             59446    OK (80 ms)                      \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 0 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:46:39] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Lagged. (330ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:47:06] \cf5 WARNING\cf0 [82239][C-00000006]: \cf4 app_dial.c\cf0 :\cf4 2507\cf0  \cf4 dial_exec_full\cf0 : Unable to create channel of type 'SIP' (cause 20 - Subscriber absent)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:47:31] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 30421\cf0  \cf4 sip_poke_noanswer\cf0 : Peer '7003' is now UNREACHABLE!  Last qualify: 239\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:47:57] \cf5 WARNING\cf0 [82242][C-00000008]: \cf4 app_dial.c\cf0 :\cf4 2507\cf0  \cf4 dial_exec_full\cf0 : Unable to create channel of type 'SIP' (cause 20 - Subscriber absent)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:48:02] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 30421\cf0  \cf4 sip_poke_noanswer\cf0 : Peer '7003' is now UNREACHABLE!  Last qualify: 319\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (Yes) No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (Yes) No             59446    LAGGED (240 ms)                 \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 0 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:48:33] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Reachable. (79ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (Yes) No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (Yes) No             59446    OK (79 ms)                      \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 1 online, 0 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:50:33] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 30421\cf0  \cf4 sip_poke_noanswer\cf0 : Peer '7003' is now UNREACHABLE!  Last qualify: 110\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:50:37] \cf5 WARNING\cf0 [82249][C-0000000a]: \cf4 app_dial.c\cf0 :\cf4 2507\cf0  \cf4 dial_exec_full\cf0 : Unable to create channel of type 'SIP' (cause 20 - Subscriber absent)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:52:02] \cf5 WARNING\cf0 [82252][C-0000000b]: \cf4 app_dial.c\cf0 :\cf4 2507\cf0  \cf4 dial_exec_full\cf0 : Unable to create channel of type 'SIP' (cause 20 - Subscriber absent)\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (Yes) No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             59446    UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 0 online, 1 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI> sip show peers\cf1\highlight2\par
+\cf0\highlight0 Name/username             Host                                    Dyn Forcerport Comedia    ACL Port     Status      Description         \cf1\highlight2\par
+\cf0\highlight0 7001/7001                 10.9.8.250                               D  Auto (Yes) No             59846    Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7002/7002                 10.9.8.250                               D  Auto (Yes) No             5060     Unmonitored                     \cf1\highlight2\par
+\cf0\highlight0 7003/7003                 172.16.5.18                              D  Auto (No)  No             59446    UNREACHABLE                     \cf1\highlight2\par
+\cf0\highlight0 3 sip peers [Monitored: 0 online, 1 offline Unmonitored: 2 online, 0 offline]\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:52:26] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 24884\cf0  \cf4 handle_response_peerpoke\cf0 : Peer '7003' is now Reachable. (98ms / 200ms)\cf1\highlight2\par
+\cf0\highlight0 [Jul  5 13:53:27] \cf3 NOTICE\cf0 [82168]: \cf4 chan_sip.c\cf0 :\cf4 30421\cf0  \cf4 sip_poke_noanswer\cf0 : Peer '7003' is now UNREACHABLE!  Last qualify: 98\cf1\highlight2\par
+\cf0\highlight0 athira-agw*CLI>\cf1\highlight2\par
+\cf0\highlight0\f1\par
+}
+ 
